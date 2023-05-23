@@ -96,7 +96,6 @@ class CreateParticles {
 		this.buttom = false;
 
 		this.data = {
-
 			text: 'nsftwr',
 			amount: 1500,
 			particleSize: 1,
