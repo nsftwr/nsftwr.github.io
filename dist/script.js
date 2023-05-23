@@ -97,7 +97,7 @@ class CreateParticles {
 
 		this.data = {
 
-			text: '\nnsftwr',
+			text: 'nsftwr',
 			amount: 1500,
 			particleSize: 1,
 			particleColor: 0xffffff,
