@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>n - cloud dev</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>n - cloud dev</title>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<script type="x-shader/x-vertex" id="vertexshader">
+    <!-- partial:index.partial.html -->
+    <script type="x-shader/x-vertex" id="vertexshader">
 
   attribute float size;
   attribute vec3 customColor;
@@ -24,7 +26,7 @@
   }
 
 </script>
-<script type="x-shader/x-fragment" id="fragmentshader">
+    <script type="x-shader/x-fragment" id="fragmentshader">
 
  uniform vec3 color;
  uniform sampler2D pointTexture;
@@ -39,8 +41,16 @@
  }
 </script>
 
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js'></script><script  src="./script.js"></script>
+    <div id="magic"></div>
+    <div class="playground">
+        <div class="bottomPosition">
+            <h1 class="special">n<br><span class="minText">n</span></h1>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js'></script>
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
