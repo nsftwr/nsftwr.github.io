@@ -97,7 +97,7 @@ class CreateParticles {
 
 		this.data = {
 
-			text: 'n\ncloud dev',
+			text: 'cloud dev',
 			amount: 1500,
 			particleSize: 1,
 			particleColor: 0xffffff,
