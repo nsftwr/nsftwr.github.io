@@ -4,7 +4,7 @@ description: Examples of text, typography, math equations, diagrams, flowcharts,
 date: 2019-08-08 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [typography]
-pin: true
+pin: false
 math: true
 mermaid: true
 ---

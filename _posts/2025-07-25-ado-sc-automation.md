@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps Service Connection Automation
 description: An automated process to create Federated AzureRM Service Connections in Azure DevOps. Just a simple configuration file for your DevOps Organisation.
-date: 2025-07-25 11:33:00 +0000
+date: 2025-07-19 11:33:00 +0000
 categories: [Azure, Azure DevOps]
 tags: [azure, azure devops, automation, service connection]
 pin: true
