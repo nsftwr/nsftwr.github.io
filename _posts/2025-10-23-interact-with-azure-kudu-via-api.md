@@ -1,17 +1,19 @@
 ---
 title: Send commands to Azure App Service hosts using REST API
 description: Interact with Azure App Service via REST API like you would usually interact through Kudu.
-date: 2025-10-23 22:00:00 +0000
+date: 2025-10-23 22:30:00 +0000
 categories: [Azure, Automation]
 tags: [azure, automation]
 pin: true
 image:
-  path: /assets/img/posts/azure-kudo-rest-api/thumbnail.png
+  path: /assets/img/posts/interact-with-azure-kudu-via-api/thumbnail.png
 ---
 
 ## Introduction
 
 Have you ever needed to access multiple App Services through the Advanced Tools (kudu) console in Azure? If you are dealing with 10's of apps it can easily eat up a lot of your time, especially if you are dealing with something as simple as I did today - extracting the precise runtime versions for nearly 100 App Services.
+
+Luckly, you can interact with the kudu debug console through an API, not needing to go through the portal.
 
 ## Interacting
 
@@ -107,7 +109,9 @@ foreach ($env in $environment) {
 And at the end, it should have the following outputs:
 
 - Success
-![Successful connection](/assets/img/posts/azure-kudo-rest-api/successful_run.png)
+
+![Successful connection](/assets/img/posts/interact-with-azure-kudu-via-api/successful_run.png)
 
 - Failure
-![Failed connection](/assets/img/posts/azure-kudo-rest-api/failed_run.png)
+
+![Failed connection](/assets/img/posts/interact-with-azure-kudu-via-api/failed_run.png)
