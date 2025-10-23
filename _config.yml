@@ -17,7 +17,7 @@ timezone: Europe/London
 title: nsftwr ☁️
 tagline: An Azure Engineer sharing his findings along the way
 description: >- # used by seo meta and the atom feed
-  I'm an Azure Engineer documenting my journey as I go. I share content on all things Azure—whether it's Azure DevOps or broader cloud topics. I'm a huge Bicep advocate and love anything automation. Blogs like mine played a big role in my own growth, so I hope to pass on that value and help you discover something new.
+  I'm an Azure Engineer documenting my journey as I go. I share content on all things Azure — whether it's Azure DevOps or broader cloud topics. I'm a huge Bicep advocate and love anything automation. Blogs played a big role in my own growth, so I hope to pass on that value and help you discover something new.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
