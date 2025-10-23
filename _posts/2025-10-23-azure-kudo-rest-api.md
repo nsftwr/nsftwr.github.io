@@ -1,7 +1,7 @@
 ---
 title: Send commands to Azure App Service hosts using REST API
 description: Interact with Azure App Service via REST API like you would usually interact through Kudu.
-date: 2025-10-23 23:00:00 +0000
+date: 2025-10-23 22:00:00 +0000
 categories: [Azure, Automation]
 tags: [azure, automation]
 pin: true
