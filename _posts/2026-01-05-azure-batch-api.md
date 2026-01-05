@@ -1,7 +1,7 @@
 ---
 title: 'Azure Batch API: Your Secret Weapon for Parallel Management Operations'
 description: Stop waiting around for your Azure management scripts to finish. By combining Azure Batch API with Management API calls, you can process multiple operations simultaneously and supercharge your cloud automation workflows. Here's how to get started.
-date: 2026-05-01 14:30:00 +0000
+date: 2026-01-05 14:30:00 +0000
 categories: [Azure, Automation]
 tags: [azure, automation]
 pin: true
