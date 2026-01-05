@@ -4,7 +4,7 @@ description: Interact with Azure App Service via REST API like you would usually
 date: 2025-10-23 22:30:00 +0000
 categories: [Azure, Automation]
 tags: [azure, automation]
-pin: true
+pin: false
 image:
   path: /assets/img/posts/interact-with-azure-kudu-via-api/thumbnail.png
 ---
