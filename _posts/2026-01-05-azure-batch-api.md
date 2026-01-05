@@ -199,25 +199,19 @@ Rather than sending all requests at once (which could hit API limits), the scrip
 
 **Note on batch size selection:** The batch size of 15 was chosen strategically to balance performance with API behavior. When batch payloads exceed a certain size, the Azure Batch API returns a `201 Accepted` status code instead of `200 OK`, along with a location header pointing to a URL where the results can be retrieved via a subsequent GET request. By keeping batches smaller, we avoid this two-step process entirely, simplifying the implementation while also reducing the likelihood of encountering `429 Too Many Requests` throttling errors.
 
+The script:
+
 1. **Indicates progress** and displays it to the user with `Write-Progress`
-
-  ![Progress indicator](/assets/img/posts/azure-batch-api/progress-indicator.png)
-
 2. **Sends the batch** to Azure's batch endpoint using `Invoke-RestMethod` with bearer token authentication
 3. **Collects the responses** and adds them to a consolidated list for further processing
+
+![Progress indicator](/assets/img/posts/azure-batch-api/progress-indicator.png)
 
 This approach balances throughput with API limits, ensuring efficient processing without overwhelming the service.
 
 ### Performance Impact
 
-The optimization results speak for themselves:
-
-| Approach           | Execution Time | Requests/Second |
-| ------------------ | -------------- | --------------- |
-| Iterative (serial) | ~7 minutes     | ~0.24           |
-| Azure Batch API    | ~20 seconds    | ~5.0            |
-
-That's a **95%+ reduction** in execution time for querying 100+ subscriptions.
+I was able to get the duration down to 20 seconds, from the original 7 minutes. That's a **95%+ reduction** in execution time for querying 100+ subscriptions.
 
 ![Results](/assets/img/posts/azure-batch-api/results.png)
 
